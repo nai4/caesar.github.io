@@ -1,0 +1,127 @@
+.container {
+    width: 1600px;
+    /* 調整容器寬度 */
+    height: 1200px;
+    /* 調整容器高度 */
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dream {
+    position: absolute;
+    width: 1000px;
+    height: 850px;
+}
+
+.cat {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 800px;
+    left: 800px;
+}
+
+.game {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    overflow: hidden;
+
+}
+
+.game iframe {
+    width="600" 
+    height="550"
+    overflow: hidden;
+    
+}
+
+
+.title {
+    position: absolute;
+    opacity: 50%;
+    top: 10%;
+    /* 距離容器頂部的距離為10% */
+    left: 0px;
+    /* 距離容器右邊的距離為10% */
+    width: 500px;
+    /* 寬度為容器的50% */
+    height: 400px;
+    /* 高度為容器的50% */
+}
+
+
+.title h1 {
+    color: #6E5343;
+    font-weight: bolder;
+    font-size: 34px;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.title h2 {
+    font-weight: bold;
+    color: #6E5343;
+    font-size: 24px;
+    text-align: center;
+}
+
+.icon {
+    color: #6E5343;
+    font-size: 20px;
+    position: relative;
+    top: 400px;
+    left: -380px;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+
+.icon p {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: 10px;
+}
+
+.icon a img {
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.icon a:hover img {
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .title {
+        top: 0%;
+        /* 距離容器頂部的距離為10% */
+        left: 300px;
+        /* 距離容器右邊的距離為10% */
+    }
+
+    .dream {
+        top: 300px;
+    }
+
+    .icon {
+
+        top: -200px;
+        left: 300px;
+
+    }
+}
